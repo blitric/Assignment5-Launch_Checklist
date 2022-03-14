@@ -10,6 +10,7 @@ window.addEventListener("load", function() {
         const fuelInput = document.querySelector("input[name=fuelLevel]");
         const cargoInput = document.querySelector("input[name=cargoMass]");
         const faultyItems = document.getElementById("faultyItems");
+       
         
      
     

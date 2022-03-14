@@ -41,6 +41,7 @@ function validateInput(testInput) {
 
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel, event) {
     
+    
     if(validateInput(pilot) === "Empty" || validateInput(copilot) === "Empty" || validateInput(fuelLevel) === "Empty" ||
     validateInput(cargoLevel) === "Empty")  {
         alert("All fields are required!");
