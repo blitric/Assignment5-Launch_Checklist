@@ -13,7 +13,7 @@ window.addEventListener("load", function() {
         
      
     
-    formSubmission(document, faultyItems, pilotInput.value, copilotInput.value, fuelInput.value, cargoInput.value);
+    formSubmission(document, faultyItems, pilotInput.value, copilotInput.value, fuelInput.value, cargoInput.value, event);
    
     });
    
