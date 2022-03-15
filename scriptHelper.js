@@ -54,7 +54,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel, e
        event.preventDefault(); 
       
     } else {
-     event.preventDefault();
+    
      
         let launchStatus = document.getElementById("launchStatus");
         let fuelStatus = document.getElementById("fuelStatus");
@@ -73,12 +73,14 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel, e
             fuelStatus.innerHTML = "Fuel level too low for launch";
             launchStatus.innerHTML = "Shuttle not ready for launch";
             launchStatus.style.color = "red";
+            event.preventDefault();
         } 
          if(cargoLevel > 10000) {
             list.style.visibility = "visible";
              cargoStatus.innerHTML = "Cargo level too much for launch";
              launchStatus.innerHTML = "Shuttle not ready for launch";
              launchStatus.style.color = "red";
+             event.preventDefault();
          } 
         }
 
